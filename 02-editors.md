@@ -1,6 +1,5 @@
 # Choose and learn your editor(s)
 
-
 Computing's interface is text. To work effectively, you need to be fluent with this interface.
 
 
@@ -31,7 +30,7 @@ Both Emacs and vim have built-in interactive tutorials that you can try.
 
 What terminal editor will you use? How did you make your decision?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+I will use vim as a terminal text editor. I made this decision because it seems that nano will be easy to learn on the fly if i need too and i rather spend some time learning the more difficult but efficient editor. it didnt seem that emacs was the tool for me because it seems that the value from emacs comes from the ability to do absolutely everything you may need from the terminal, which i really only want it for the text editing capabilities. 
 
 ---
 
