@@ -37,7 +37,9 @@ import sklearn
 
 Did you install Python 2 or 3? Why? How can you check the version of Python installed if you happen to be on an unfamiliar computer?
 
-I installed Python 2, because this is what I have been learning for the last year. I also didnt necessariy want to deal with all the backwards compatibitlity issues, and it seems that there are more developers still using python 2. I once read, the day all the python written to design the mac ecosystem is written in python 3, then I should switch to python 3. that resonated with me. 
+I installed Python 2 because it's the version I have been using since I started with python. It also seems that there may be backwards compatibility issues when using python 3 with certian packages that have not yet been updated. In this sense, it seems that the python 2 is still the more complete ecosystem, even though it may not have  the most up to date feature set. 
+
+You can check the version python installed by running: "python --version" 
 
 ---
 
