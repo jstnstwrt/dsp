@@ -30,7 +30,7 @@ Both Emacs and vim have built-in interactive tutorials that you can try.
 
 What terminal editor will you use? How did you make your decision?
 
-I will use vim as a terminal text editor. I made this decision because it seems that nano will be easy to learn on the fly if i need too and i rather spend some time learning the more difficult but efficient editor. it didnt seem that emacs was the tool for me because it seems that the value from emacs comes from the ability to do absolutely everything you may need from the terminal, which i really only want it for the text editing capabilities. 
+I will use vim as a terminal text editor. I made this decision because it seems that nano will be easy to learn on the fly if needed and I'd rather spend the time learning the more difficult but efficient editor. I felt that emacs was not the right tool for me because it seems that the value from emacs comes from it's ability to do absolutely everything you may need from the terminal and I would really only need it for it's  text editing capabilities. 
 
 ---
 
