@@ -1,4 +1,4 @@
-# Install software on your computer
+Install software on your computer
 
 
 ### Install [git](http://git-scm.com/).
@@ -37,7 +37,7 @@ import sklearn
 
 Did you install Python 2 or 3? Why? How can you check the version of Python installed if you happen to be on an unfamiliar computer?
 
-I installed Python 2 because it's the version I have been using since I started with python. It also seems that there may be backwards compatibility issues when using python 3 with certian packages that have not yet been updated. In this sense, it seems that the python 2 is still the more complete ecosystem, even though it may not have  the most up to date feature set. 
+I installed Python 2 because it's the version of Python I feel most comfortable with-- I've been using since I started with Python. Additionally, it also seems that there may be backwards compatibility issues when using Python 3 with certian packages that have not yet been updated. In this sense, Python 2 still seems to have the more complete ecosystem, even though it may not have the most up to date feature set. 
 
 You can check the version python installed by running: "python --version" 
 
