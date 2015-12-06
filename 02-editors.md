@@ -64,15 +64,15 @@ I have decided to use Sublime Text as my graphical editor. I did some reading on
 
 Some keyboard shortcuts for Sublime Text:
 
-shift + command + f, Allows you to search for strngs throghout an entire set of project files. Futhermore, it automatically creates a text file for you describing the filepath and line number of every instance of the stirng found.
+shift + command + f, Allows you to search for strings throghout an entire set of project files. Futhermore, it automatically creates a text file for you describing the filepath and line number of every instance of the string found.
  
 option + command + n, where n is a number 1-5, Allows you to control the screen layout and split the screen you up to four times. 
 
-control + command + f, Applies full screen mode
+control + command + f, Applies full screen mode.
 
 cmd + left (right) arrow key, Takes the cursor to the beginning (end) of the current line.
 
-cmd + d, Selects a word and the by repeating the shortcut, it selects the next occurences of the word. You can select as many as you like. 
+cmd + d, Selects a word and by repeating the shortcut, it selects the next occurences of the word. You can select as many as you like. 
 
 You can customize Sublime in a number of ways. First you can create custom keyboard shortcuts by creating your own key bindings. These are set in the Packages/User/Default.sublime-keymap XML file containing the defualt binds and are fully configurable. Additionally, Sublime can be customized by installing other exiting packages accomplishing certian ends. This can be done using Packege Control which needs to be installed.    
 
