@@ -60,6 +60,20 @@ We will also use Jupyter (IPython) notebooks, but this does not remove the need 
 
 What graphical editor will you use? How did you make your decision? What are some interesting features of your editor? What are some useful keyboard shortcuts for your editor? How do you customize your editor?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+I have decided to use Sublime Text as my graphical editor. I did some reading online to see how more experienced Python developers compared various popular editors. I found that most ranked Sublime very highly relative to others, especially for its extensibility and extent to which it is customizable through the use of packages and key bindings. It seems that there is much room for efficiency gains in my programming through the use of this editor.
+
+Some keyboard shortcuts for Sublime Text:
+
+shift + command + f, Allows you to search for strngs throghout an entire set of project files. Futhermore, it automatically creates a text file for you describing the filepath and line number of every instance of the stirng found.
+ 
+option + command + n, where n is a number 1-5, Allows you to control the screen layout and split the screen you up to four times. 
+
+control + command + f, Applies full screen mode
+
+cmd + left (right) arrow key, Takes the cursor to the beginning (end) of the current line.
+
+cmd + d, Selects a word and the by repeating the shortcut, it selects the next occurences of the word. You can select as many as you like. 
+
+You can customize Sublime in a number of ways. First you can create custom keyboard shortcuts by creating your own key bindings. These are set in the Packages/User/Default.sublime-keymap XML file containing the defualt binds and are fully configurable. Additionally, Sublime can be customized by installing other exiting packages accomplishing certian ends. This can be done using Packege Control which needs to be installed.    
 
 ---
