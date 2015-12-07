@@ -41,9 +41,7 @@ The command ls (without flags) lists out all of non hidden files and directories
 
  If you add the flag -a, ls -a returns the complete list of files/directories, including all hidden files. The -l flag concerns the information displayed about each file listed, it stands for long form. So the listed files also include last date modified, premissions, filename, file owner, and so on. If you use the combined flag of -lh, it combines the long form flag with the human readable formatting flag. This means that file sizes displayed for each file reported will be in the easily readable 3.1K vs 3127. 
 
-ls -a, ls -l are meaningful, but ls -h isnt meaningfully different than ls.
-ls -al, ls lh are meaningful, but ls -ah isnt meaningfully different from ls -a.
-ls -alh is a meaningful command as well.  
+The flags -a and -l are meaningful, but -h on it's own is not meaningfully different than the ls command. The combined flags -al and  -lh are meaningful, but -ah is not meaningfully different from ls -a. The combined flag -alh is a meaningful command as well.  
 
 ---
 
@@ -52,7 +50,9 @@ ls -alh is a meaningful command as well.
 
 What does `xargs` do? Give an example of how to use it.
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+The command xargs helps to transform space or tab delimited data coming in via the stdin, the standard input stream, into arguments. This is very helpful because some functions do not accept input in the form the standard input stream. This is often used with pipes that connects stdout of the first process to the stdin on the second process. 
+
+For example, if you a sequence of file paths as the stdout of some process and you wanted to do somesthing with them, say delete them. In this case, because 'rm -rf' does not act on stdout directly, you would use xargs to transform the filepath data into arguments that the second process can now act on.
 
 ---
 
