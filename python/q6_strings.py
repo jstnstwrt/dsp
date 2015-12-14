@@ -18,7 +18,13 @@ def donuts(count):
     >>> donuts(99)
     'Number of donuts: many'
     """
-    raise NotImplementedError
+    statement = 'Number of donuts: '
+    if count < 10:
+        return statement + str(count)
+    else:
+        return statement + 'many'
+
+
 
 
 def both_ends(s):
