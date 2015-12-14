@@ -87,7 +87,11 @@ def mix_up(a, b):
     >>> mix_up('pezzy', 'firm')
     'fizzy perm'
     """
-    raise NotImplementedError
+    a_start, a_end = a[:2], a[2:]
+    b_start, b_end = b[:2], b[2:]
+    return b_start + a_end + ' ' + a_start + b_end
+
+
 
 
 def verbing(s):
@@ -104,7 +108,14 @@ def verbing(s):
     >>> verbing('do')
     'do'
     """
-    raise NotImplementedError
+    if len(s) > 3:
+        if s[-3:] == 'ing':
+            s += 'ly'
+        else:
+            s += 'ing'
+        return s
+    return s
+
 
 
 def not_bad(s):
