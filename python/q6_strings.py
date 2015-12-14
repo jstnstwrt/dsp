@@ -21,8 +21,7 @@ def donuts(count):
     statement = 'Number of donuts: '
     if count < 10:
         return statement + str(count)
-    else:
-        return statement + 'many'
+    return statement + 'many'
 
 
 
@@ -45,8 +44,7 @@ def both_ends(s):
     """
     if len(s) < 2:
         return ''
-    else:
-        return s[0:2] + s[-2:]
+    return s[0:2] + s[-2:]
 
 
 def fix_start(s):
@@ -65,7 +63,13 @@ def fix_start(s):
     >>> fix_start('donut')
     'donut'
     """
-    raise NotImplementedError
+    index = s.find(s[0],1)
+    while index != -1:
+        s = s[:index] + '*' + s[index+1:]
+        index = s.find(s[0],index)
+    return s
+
+
 
 
 def mix_up(a, b):
