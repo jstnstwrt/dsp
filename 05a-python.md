@@ -39,6 +39,9 @@ def front_back(a, b):
 	g = lambda s: (len(s) + 1)/2
     return a[:g(a)] + b[:g(b)] + a[g(a):] + b[g(b):]
 ```
+>> Here is another example using sorted:
+>>```sorted([(1,2),(7,3),(5,1)],key=lambda x: x[1])
+```
 ---
 
 ###Q4. List Comprehension, Map &amp; Filter
