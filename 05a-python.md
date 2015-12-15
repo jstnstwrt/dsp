@@ -93,6 +93,16 @@ filter(lambda x: x%2, range(6)) # yields [1, 3, 5]
 
 >> It is generally regarded that using list comprehensions is the more 'pythonic' way to consicely create lists, however there are certain situations where map and filter aare useful (e.g., when you want to introduce an additional scope within a function). 
 
+>> It is also possible to use comprehensions to create sets and dictionaries as well using their corresponding syntaxes. For example:
+
+>>```
+{key: val for (key, val) in [('a',1),('b',2)]} # yields {'a': 1, 'b': 2}
+```
+>>```
+{x for x in 'cat'} # yields set(['a', 'c', 't'])
+```
+
+
 ---
 
 ###Complete the following problems by editing the files below:
