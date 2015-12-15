@@ -33,11 +33,11 @@ Describe Python's `lambda`. What is it, and what is it used for? Give at least o
 >> It is very helpful, and often more concise, when a small function is needed on the fly. Also, it is useful when you want to define a function as the output of another function or use a function as the input of another function. 
 
 >> I used a lambda function in my solution to the front_back fucntion in q6_strings.py:
+
 ```def front_back(a, b):
 	g = lambda s: (len(s) + 1)/2
     return a[:g(a)] + b[:g(b)] + a[g(a):] + b[g(b):]
 ```
-
 ---
 
 ###Q4. List Comprehension, Map &amp; Filter
