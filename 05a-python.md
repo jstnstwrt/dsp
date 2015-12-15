@@ -38,7 +38,7 @@ for i in ['c','a','t']:
 	print i
 ```
 
- >> Finding out if an element is contained in a collection is vastly faster when checking a set compared to checking a list. This is because sets are implemented using a hash table and lists simply use an index. This means that when you check membership in a list, you have to actually iterate through the entire list every time checking against every element. On the other hand, when checking in a set, the hash of the value tells you which bucket of elements to check (which is a much smaller collection of objects). This performance benefit as increases the size of the list/set gets large. 
+ >> Finding out if an element is contained in a collection is vastly faster when checking a set compared to checking a list. This is because sets are implemented using a hash table and lists simply use an index. This means that when you check membership in a list, you have to actually iterate through the entire list every time checking against every element. On the other hand, when checking in a set, the hash of the value tells you which bucket of elements to check (which is a much smaller collection of objects). This performance benefit increases as the size of the list/set gets large. 
 
 ---
 
@@ -67,7 +67,17 @@ sorted([(1,2),(7,3),(5,1)],key=lambda x: x[1])
 
 Explain list comprehensions. Give examples and show equivalents with `map` and `filter`. How do their capabilities compare? Also demonstrate set comprehensions and dictionary comprehensions.
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> List comprehensions are a succint way to construct lists. 
+
+>>```
+[x%2 for x in range(6)] # yields [0, 1, 0, 1, 0, 1]
+```
+
+>> The map function creates a list by applying a specified function to every element of an iterable. So I can construct the same list as above using map as follows:
+
+>>```
+map(lambda x: x%2, range(6)) # yields [0, 1, 0, 1, 0, 1]
+```
 
 ---
 
