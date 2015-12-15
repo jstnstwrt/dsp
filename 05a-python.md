@@ -26,15 +26,13 @@ How are Python lists and sets similar and different? Give examples of using both
 
 >>```
 s1 = {'c','a','t'}
-
+```
 >>```
 s2 = set(['cat'])
 ```
-
 >>```
 'c' in s1
 ```
-
 >>```
 for i in ['c','a','t']:
 	print i
