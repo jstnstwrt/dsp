@@ -40,7 +40,8 @@ def front_back(a, b):
     return a[:g(a)] + b[:g(b)] + a[g(a):] + b[g(b):]
 ```
 >> Here is another example using sorted:
->>```sorted([(1,2),(7,3),(5,1)],key=lambda x: x[1])
+>>```
+sorted([(1,2),(7,3),(5,1)],key=lambda x: x[1])
 ```
 ---
 
