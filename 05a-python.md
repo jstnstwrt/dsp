@@ -67,7 +67,7 @@ sorted([(1,2),(7,3),(5,1)],key=lambda x: x[1])
 
 Explain list comprehensions. Give examples and show equivalents with `map` and `filter`. How do their capabilities compare? Also demonstrate set comprehensions and dictionary comprehensions.
 
->> List comprehensions are a succint way to construct lists. 
+>> List comprehensions are a succint way to construct lists. It does so 
 
 >>```
 [x%2 for x in range(6)] # yields [0, 1, 0, 1, 0, 1]
@@ -78,6 +78,20 @@ Explain list comprehensions. Give examples and show equivalents with `map` and `
 >>```
 map(lambda x: x%2, range(6)) # yields [0, 1, 0, 1, 0, 1]
 ```
+
+>> The filter function is very similar to map and applies a specified function to every element of an iterable, but returns the list of elements for which the function returned True. 
+
+>>```
+filter(lambda x: x%2, range(6)) # yields [1, 3, 5]
+```
+
+>> Equivalent lists (to the output of the filter function) can always also be created using list comprehensions and including the corresponding if clause. For example, the equivalent list is found using a list comp:
+
+>>```
+[x for x in range(6) if x%2 > 0] # yields [1, 3, 5]
+```
+
+>> It is generally regarded that using list comprehensions is the more 'pythonic' way to consicely create lists, however there are certain situations where map and filter aare useful (e.g., when you want to introduce an additional scope within a function). 
 
 ---
 
