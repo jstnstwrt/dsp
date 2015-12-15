@@ -30,12 +30,13 @@ Describe Python's `lambda`. What is it, and what is it used for? Give at least o
 
 >> A lambda function is an anonymous function that can be defined at runtime. They constrained to be only one single expression and can reference functions for the containing scope. 
 
-It is very helpful, and often more concise, when a small function is needed on the fly. Also, it is useful when you want to define a function as the output of another function or use a function as the input of another function. 
+>> It is very helpful, and often more concise, when a small function is needed on the fly. Also, it is useful when you want to define a function as the output of another function or use a function as the input of another function. 
 
-I used a lambda function in my solution to the front_back fucntion in q6_strings.py:
-> def front_back(a, b):
-    g = lambda s: (len(s) + 1)/2
+>> I used a lambda function in my solution to the front_back fucntion in q6_strings.py:
+```def front_back(a, b):
+	g = lambda s: (len(s) + 1)/2
     return a[:g(a)] + b[:g(b)] + a[g(a):] + b[g(b):]
+```
 
 ---
 
