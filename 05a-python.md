@@ -34,7 +34,8 @@ Describe Python's `lambda`. What is it, and what is it used for? Give at least o
 
 >> I used a lambda function in my solution to the front_back fucntion in q6_strings.py:
 
-```def front_back(a, b):
+```
+def front_back(a, b):
 	g = lambda s: (len(s) + 1)/2
     return a[:g(a)] + b[:g(b)] + a[g(a):] + b[g(b):]
 ```
