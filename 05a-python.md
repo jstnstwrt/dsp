@@ -23,18 +23,24 @@ How are Python lists and sets similar and different? Give examples of using both
 >> Lists and sets are both data types that store collections of values in python. A list is an *ordered* collection, whereas sets are an unordered collection. This means that one should use a list (as opposed to a set) when the particular sequence (or indexing) of the collection of elements is important. On the other hand, sets guarantee that every element in the collection is unique while lists may contain as many repeated values as you like. Sets also cannot contain any mutuable elements, although lists can. 
 
 >> Some examples of both:
+
 >>```
 s1 = {'c','a','t'}
 
+>>```
 s2 = set(['cat'])
+```
 
+>>```
 'c' in s1
+```
 
+>>```
 for i in ['c','a','t']:
 	print i
 ```
 
- >>If you are iterating through a collection, than a list will have better preformance. However if you are checking to see if an element is contained in a collection, than sets have better preformance. 
+ >> If you are iterating through a collection, than a list will have better preformance. However if you are checking to see if an element is contained in a collection, than sets have better preformance. 
 
 ---
 
