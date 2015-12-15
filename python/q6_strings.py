@@ -135,7 +135,13 @@ def not_bad(s):
     >>> not_bad("It's bad yet not")
     "It's bad yet not"
     """
-    raise NotImplementedError
+
+    not_start = s.find('not')
+    bad_start = s.find('bad')
+    if not_start < bad_start and -1 not in (not_start,bad_start):
+        return s[:not_start] + 'good' + s[bad_start + 3:]
+    return s
+
 
 
 def front_back(a, b):
@@ -154,4 +160,11 @@ def front_back(a, b):
     >>> front_back('Kitten', 'Donut')
     'KitDontenut'
     """
-    raise NotImplementedError
+    g = lambda s: (len(s) + 1)/2
+    return a[:g(a)] + b[:g(b)] + a[g(a):] + b[g(b):]
+
+
+
+
+
+
