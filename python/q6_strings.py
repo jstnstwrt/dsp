@@ -138,7 +138,7 @@ def not_bad(s):
 
     not_start = s.find('not')
     bad_start = s.find('bad')
-    if not_start < bad_start and -1 not in (not_start,bad_start):
+    if not_start < bad_start and -1 not in {not_start,bad_start}:
         return s[:not_start] + 'good' + s[bad_start + 3:]
     return s
 
