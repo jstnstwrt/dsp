@@ -14,19 +14,15 @@ degrees = [degree.replace('.','').upper() for sublist in degree_lists\
 										  for degree in sublist]
 del degrees[degrees.index('0')] # Removing the non-degree from list
 degree_frequencies =  pd.Series(degrees).value_counts()
-# print degree_frequencies
 
 ## Q2
 df['title'][24] = 'Assistant Professor of Biostatistics' # Correcting typo
 title_frequencies = df['title'].value_counts()
-# print title_frequencies
 
 ## Q3
 emails = list(df.email)
-# print emails
 
 ## Q4
 email_re = re.compile("@[\w.]+")
 domains = [email_re.search(email).group() for email in emails]
 domain_frequencies = pd.Series(domains).value_counts()
-# print domain_frequencies
