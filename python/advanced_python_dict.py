@@ -8,14 +8,11 @@ df.columns = [col.strip() for col in df.columns] #Fixing column names
 keys = df['name'].values.tolist()
 names = [fullname.strip().split(' ') for fullname in keys]
 last_names = [name[-1] for name in names]
-
 # Fixing titles to be correct form
 df['title'] = df['title'].map(lambda x: x.strip(' of Biostatistics'))
 
-
 # Creating dict
 vals = df[['degree','title','email']].values.tolist()
-
 faculty_dict = {}
 for key, val in zip(last_names,vals):
 	if key in faculty_dict:
@@ -25,5 +22,3 @@ for key, val in zip(last_names,vals):
 
 print faculty_dict
 
-# faculty_dict = {key:value for key,value in zip(last_names,vals)}
-# print faculty_dict
