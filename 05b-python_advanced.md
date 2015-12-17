@@ -100,10 +100,7 @@ Print the first 3 key and value pairs of the dictionary:
           ],
   'Bilker': [\
     ['Ph.D.', 'Professor', 'warren@upenn.edu']
-          ],
-
-          ...
-  } 
+          ], ...}
 
 ```
 ####Q7.  The previous dictionary does not have the best design for keys.  Create a new dictionary with keys as:
