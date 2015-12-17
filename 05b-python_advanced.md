@@ -103,7 +103,6 @@ Print the first 3 key and value pairs of the dictionary:
   'Bilker': [\
     ['Ph.D.', 'Professor', 'warren@upenn.edu']
           ], ...}
-
 ```
 
 
@@ -117,7 +116,7 @@ professor_dict = {('Susan', 'Ellenberg'): ['Ph.D.', 'Professor', 'sellenbe@upenn
                 ('Yimei', 'Li'): ['Ph.D.', 'Assistant Professor', 'liy3@email.chop.edu'],\
                 ('Mingyao','Li'): ['Ph.D.', 'Associate Professor', 'mingyao@mail.med.upenn.edu'],\
                 ('Hongzhe','Li'): ['Ph.D.', 'Professor', 'hongzhe@upenn.edu']
-            }
+              }
 ```
 
 Print the first 3 key and value pairs of the dictionary:
