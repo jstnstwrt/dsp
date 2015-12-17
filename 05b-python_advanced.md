@@ -19,7 +19,7 @@ This data is available in this file:  [faculty.csv](python/faculty.csv)
 
 ####Q1. Find how many different degrees there are, and their frequencies: Ex:  PhD, ScD, MD, MPH, BSEd, MS, JD, etc.
 
->> There are 8 different degree types represented in this data set. This does not include the '0' degree entry. 
+>> There are 8 different degree types represented in this data set. This does not include the '0' degree entry. Below is a list of all the unique degree types, alongside their respective frequencies in the dataset. 
 
 >> 1. PHD, 31
 >> 2. SCD, 6
