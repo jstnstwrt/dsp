@@ -37,11 +37,10 @@ def front_x(words):
     >>> front_x(['mix', 'xyz', 'apple', 'xanadu', 'aardvark'])
     ['xanadu', 'xyz', 'aardvark', 'apple', 'mix']
     """
-    words = sorted(words)
-    x_i_words = [(i,word) for i, word in enumerate(words) if word[0]=='x']
-    x_i,x_words = zip(*x_i_words)
-    del words[x_i[0]:x_i[-1]+1]
-    return list(x_words) + words
+    x = [word for word in words if word[0]=='x']
+    not_x = [word for word in words if not word[0]=='x']
+    return sorted(x) + sorted(not_x)
+
 
 
 def sort_last(tuples):
@@ -77,13 +76,13 @@ def remove_adjacent(nums):
     >>> remove_adjacent([])
     []
     """
-    try:
+    if len(nums) > 0:
         new_nums = [nums[0]]
         for n in nums:
             if not new_nums[-1] == n:
                 new_nums.append(n)
         return new_nums
-    except:
+    else:
         return nums
 
 
