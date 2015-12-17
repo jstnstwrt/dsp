@@ -19,22 +19,25 @@ This data is available in this file:  [faculty.csv](python/faculty.csv)
 
 ####Q1. Find how many different degrees there are, and their frequencies: Ex:  PhD, ScD, MD, MPH, BSEd, MS, JD, etc.
 
->> There are 8 different degree types represented in this data set. This does not include the '0' degree entry. Below is a list of all the unique degree types, alongside their respective frequencies in the dataset. 
+>> There are 8 different degree types represented in this data set. This does not include the '0' degree entry. Below is a list of all the unique degree types, alongside their respective counts and frequencies in the dataset. 
 
->> 1. PHD, 31
->> 2. SCD, 6
->> 3. MPH, 2
->> 4. MS, 2
->> 5. BSED, 1
->> 6. JD, 1
->> 7. MA, 1
->> 8. MD, 1
+>> 1. PHD, 31, 0.688
+>> 2. SCD, 6, 0.133
+>> 3. MPH, 2, 0.044
+>> 4. MS, 2, 0.044
+>> 5. BSED, 1, 0.022
+>> 6. JD, 1, 0.022
+>> 7. MA, 1, 0.022
+>> 8. MD, 1, 0.022
 
 
 ####Q2. Find how many different titles there are, and their frequencies:  Ex:  Assistant Professor, Professor
 
->> REPLACE THIS WITH YOUR RESPONSE
+There are 3 different professor titles in the department. Counts and frequencies of each title in the dataset are given below:
 
+>> 1. Professor of Biostatistics, 13, 0.35
+>> 2. Associate Professor of Biostatistics, 12, 0.325
+>> 3. Assistant Professor of Biostatistics, 12, 0.325
 
 ####Q3. Search for email addresses and put them in a list.  Print the list of email addresses.
 
