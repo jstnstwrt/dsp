@@ -130,7 +130,6 @@ Print the first 3 key and value pairs of the dictionary:
   ('Justine', 'Shults'):\
     [' Ph.D.', 'Professor', 'jshults@mail.med.upenn.edu'], 
 ...}
-
 ```
 
 ####Q8.  It looks like the current dictionary is printing by first name.  Sort by last name and print the first 3 key and value pairs.  
