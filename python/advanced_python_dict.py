@@ -32,7 +32,7 @@ professor_dict = {key:value for key,value in zip(first_last,vals)}
 
 # Q8
 
-
+# Sort keys by the last name and print
 sorted_keys = sorted(professor_dict, key=lambda x: x[1])
 for key in sorted_keys[0:3]:
 	print '%s:%s' % (key,professor_dict[key]) 
