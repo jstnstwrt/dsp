@@ -14,10 +14,15 @@ degree_lists = [d.strip().split(' ') for d in degree_strings]
 degrees = [degree.replace('.','').upper() for sublist in degree_lists\
 										  for degree in sublist]
 del degrees[degrees.index('0')] # Removing the non-degree from list
-frequencies =  pd.Series(degrees).value_counts()/len(pd.Series(degrees))
+frequencies =  pd.Series(degrees).value_counts()
 print frequencies
 
-## Q2
+# Q2
 
-# df['title'][24] = 'Assistant Professor of Biostatistics' # Correcting typo
-# print df['title'].value_counts()/len(df['title'])
+df['title'][24] = 'Assistant Professor of Biostatistics' # Correcting typo
+print df['title'].value_counts()
+
+# Q3
+
+emails = list(df.email)
+print emails
