@@ -22,34 +22,73 @@
 # (http://blog.codinghorror.com/markov-and-you/) 
 # is a fun place to get started learning about what you're trying to make.
 
+from random import choice
 
-import pandas as pd
-
-text_file_path = "COPYRIGHT.TXT"
-
+text_file_path = "clinton.txt"
 text_file = open(text_file_path, "r")
 lines = text_file.readlines()
-
 text = ''
 for l in lines:
 	text += ' ' + l.strip(chr(10))
-
 words = text.strip().split()
 
 
-## parse the text file in to correct ngram order (order-2)
 
-## create the probability table
+order = 2
+markov_dict = {}
+for i, word in enumerate(words):
+	if i + order < len(words):
+		key = tuple(words[i:i+order])
+		val = words[i+order]
+		if key in markov_dict:
+			markov_dict[key].append(val)
+		else:
+			markov_dict[key] = [val]
 
 
-for i in range(10):
-	print tuple(words[i:i+2]), words[i+2]
+
+
+endings = {'.', '?', '!'}
+
+def write_sentence(markov_dict):
+	caps = [key for key in markov_dict.keys() if key[0][0].isupper()]
+	sentence = []
+
+	key = choice(caps)
+	first, second = key
+
+	sentence.append(first)
+	sentence.append(second)
+	while True:
+	    third = choice(markov_dict[key])
+	    sentence.append(third)
+	    if third[-1] in endings:
+	        break
+	    key = (second, third)
+	    first, second = key
+	return ' '.join(sentence) , len(sentence)
+
+
+def extend_text(max_length):
+	text = ''
+	text_length = 0
+	while text_length < max_length:
+		sentence, sentence_length = write_sentence(markov_dict)
+		text += ' ' + sentence
+		text_length +=  sentence_length
+
+	return text.strip()
 
 
 
 
-## create a string of the desired length simply by choosing randomly 
-## a traversal through the markov table
+
+
+
+
+
+
+
 
 
 def main(text_file_path, num_of_words):
