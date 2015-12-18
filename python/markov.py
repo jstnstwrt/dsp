@@ -22,8 +22,6 @@
 # (http://blog.codinghorror.com/markov-and-you/) 
 # is a fun place to get started learning about what you're trying to make.
 
-
-
 import sys
 from random import choice
 
@@ -47,7 +45,6 @@ def create_dict(words):
 				markov_dict[key].append(val)
 			else:
 				markov_dict[key] = [val]
-
 	return markov_dict
 
 
