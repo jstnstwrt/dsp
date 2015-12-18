@@ -11,7 +11,7 @@ degree_strings = list(df['degree'].values)
 # Cleaning the entries so that they are uniform
 degree_lists = [d.strip().split(' ') for d in degree_strings]
 degrees = [degree.replace('.','').upper() for sublist in degree_lists\
-						for degree in sublist]
+					for degree in sublist]
 del degrees[degrees.index('0')] # Removing the non-degree from list
 degree_frequencies =  pd.Series(degrees).value_counts()
 
