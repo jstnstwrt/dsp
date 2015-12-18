@@ -22,35 +22,37 @@
 # (http://blog.codinghorror.com/markov-and-you/) 
 # is a fun place to get started learning about what you're trying to make.
 
+
+
+import sys
 from random import choice
 
-text_file_path = "clinton.txt"
-text_file = open(text_file_path, "r")
-lines = text_file.readlines()
-text = ''
-for l in lines:
-	text += ' ' + l.strip(chr(10))
-words = text.strip().split()
+def open_txt_parse(text_file_path):
+	text_file = open(text_file_path, "r")
+	lines = text_file.readlines()
+	text = ''
+	for l in lines:
+		text += ' ' + l.strip(chr(10))
+	words = text.strip().split()
+	return words
 
+def create_dict(words):
+	order = 2
+	markov_dict = {}
+	for i, word in enumerate(words):
+		if i + order < len(words):
+			key = tuple(words[i:i+order])
+			val = words[i+order]
+			if key in markov_dict:
+				markov_dict[key].append(val)
+			else:
+				markov_dict[key] = [val]
 
+	return markov_dict
 
-order = 2
-markov_dict = {}
-for i, word in enumerate(words):
-	if i + order < len(words):
-		key = tuple(words[i:i+order])
-		val = words[i+order]
-		if key in markov_dict:
-			markov_dict[key].append(val)
-		else:
-			markov_dict[key] = [val]
-
-
-
-
-endings = {'.', '?', '!'}
 
 def write_sentence(markov_dict):
+	endings = {'.', '?', '!'}
 	caps = [key for key in markov_dict.keys() if key[0][0].isupper()]
 	sentence = []
 
@@ -69,27 +71,23 @@ def write_sentence(markov_dict):
 	return ' '.join(sentence) , len(sentence)
 
 
-def extend_text(max_length):
+def create_text(markov_dict, max_length):
 	text = ''
 	text_length = 0
 	while text_length < max_length:
 		sentence, sentence_length = write_sentence(markov_dict)
 		text += ' ' + sentence
 		text_length +=  sentence_length
-
 	return text.strip()
 
 
+def main():
+	text_file_path = sys.argv[1]
+	max_length = int(sys.argv[2])
+	words = open_txt_parse(text_file_path)
+	markov_dict = create_dict(words)
+	return create_text(markov_dict, max_length)
 
 
-
-
-
-
-
-
-
-
-
-def main(text_file_path, num_of_words):
-	pass
+if __name__ == "__main__":
+	print main() 
