@@ -23,11 +23,13 @@ for key, val in zip(last_names,vals):
 	else:
 		faculty_dict[key] = [val]
 
+
 # Q7
 
 # Need to first adjust the keys to have (first,last)
 first_last = [(name[0],name[-1]) for name in names] 
 professor_dict = {key:value for key,value in zip(first_last,vals)}
+
 
 
 # Q8
