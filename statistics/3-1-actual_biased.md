@@ -11,3 +11,5 @@ Plot the actual and biased distributions, and compute their means. As a starting
 
 
 ![alt text](https://github.com/jstnstwrt/dsp/blob/master/img/figure_ex31.png "Figure depicting probability mass funcstions")
+
+![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
