@@ -6,4 +6,5 @@
 <!-- ![alt text](https://github.com/jstnstwrt/dsp/blob/master/img/figure_ex31.png "Figure depicting probability mass funcstions" )
 >> Figure 1 -->
 
-<img src="https://github.com/jstnstwrt/dsp/blob/master/img/figure_ex31.png" title="Figure depicting probability mass funcstions" alt="alt text" style="width:10%;">
+>> <img src="https://github.com/jstnstwrt/dsp/blob/master/img/figure_ex31.png" title="Figure depicting probability mass funcstions" alt="alt text" style="width:10%;">
+>> # Figure 1
