@@ -9,4 +9,4 @@ Plot the actual and biased distributions, and compute their means. As a starting
 
 >> 
 
-<img src='img/figure_31.png' title='Probability Mass Functions depicting the actual vs biased distributions'/>
+<img src='../img/figure_31.png' title='Probability Mass Functions depicting the actual vs biased distributions'/>
