@@ -1,3 +1,3 @@
 [Think Stats Chapter 2 Exercise 4](http://greenteapress.com/thinkstats2/html/thinkstats2003.html#toc24) (Cohen's d)
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> We used an estimate of the Cohen's D statistic to investigate the size of effect that being a first born (relative to being a non-first born) has on the birth weight of the child. The Cohen's D statistic is computed by taking the difference in means between bitrh weights of the two sampled populations and dividing the result by the pooled standard deviation. Using data gathered in the National Survey of Family Growth from 2002, we found that first born babies are approximately .09 standard deviations lighter than non-first born babies. This is approximately three times the effect size found on pregnancy duration from the same variation in birth order. 
