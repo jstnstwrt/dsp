@@ -1,3 +1,3 @@
 [Think Stats Chapter 5 Exercise 1](http://greenteapress.com/thinkstats2/html/thinkstats2006.html#toc50) (blue men)
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> In this question we investigate the proportion of the male population that fall in the range of acceptable hieghts in order to participate in the Blue Man Group. We first construct the paramitized normal distribution of male heights using the location (μ = 178cm) and scale (σ = 7.7cm) parameters given by the BRFSS. Then we simply use the corresponding cummulative distribution function to compute the proportion of the distribution that is within the acceptable range of heights (5'10 - 6'1 ft) making sure to convert all values to the same measurement units. This is done by evaluating the cdf at the endpoints of the range of heights and taking the difference. We found that 34% of males fall in to the acceptable height range and meet the requirements to be a part of the Blue Man Group.
