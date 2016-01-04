@@ -1,4 +1,7 @@
 [Think Stats Chapter 8 Exercise 2](http://greenteapress.com/thinkstats2/html/thinkstats2009.html#toc77) (scoring)
->> This investigates how to 
 
->> <img src="https://github.com/jstnstwrt/dsp/blob/master/img/figure_ex8_2.png" title="Figure comparing a probability mass funcstion and a cumulative distribution function" alt="alt text" style="width:10%;" >
+>> We investigate sampling distributions of the L estimator of the lambda parameter of the exponential distribution with a lambda parameter of 2. We randomly sample the exponential distribution with a sample size of 10 and then compute the L, one divided by the mean of the sample. By simulating this process 1000 times, we find the sampling distribution for L, plotted in the first figure below. We then found the standard error of the estimate, RSME = 0.907, and a confidence interval for the sample, (1.235, 3.838). We also demonstrate that the estimator can be improved (i.e., decreased deviation from the true value) by increasing the sample size in each iteration of the simulation. We plot the standard error of the estimate against the sample size in the next polt below and we can see that the standard error decreases as the sample size increases.
+
+>> <img src="https://github.com/jstnstwrt/dsp/blob/master/img/figure_ex8_2a.png" title="Figure comparing a probability mass funcstion and a cumulative distribution function" alt="alt text" style="width:10%;" >
+
+>> <img src="https://github.com/jstnstwrt/dsp/blob/master/img/figure_ex8_2b.png" title="Figure comparing a probability mass funcstion and a cumulative distribution function" alt="alt text" style="width:10%;" >
